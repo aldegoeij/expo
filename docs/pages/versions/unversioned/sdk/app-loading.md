@@ -50,7 +50,7 @@ export default class App extends React.Component {
       return Asset.fromModule(image).downloadAsync();
     }); /* @end */
 
-    return Promise.all(cacheImages);
+    await Promise.all(cacheImages);
   }
 }
 ```
